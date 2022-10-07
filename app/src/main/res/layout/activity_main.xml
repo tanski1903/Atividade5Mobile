@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    />
+
+    <TextView
+        android:id="@+id/edTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:text="Cálculo do Novo Salário"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/edSalario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Informe seu salário..."
+        android:layout_below="@id/edTitulo"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"/>
+
+    <TextView
+        android:id="@+id/edPercentual"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selecione o Percentual:"
+        android:layout_below="@id/edSalario"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"/>
+
+    <RadioGroup
+        android:id="@+id/rgPercentual"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_below="@id/edPercentual"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp">
+
+        <RadioButton
+            android:id="@+id/rbP40"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="40%"/>
+
+        <RadioButton
+            android:id="@+id/rbP45"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="45%"/>
+
+        <RadioButton
+            android:id="@+id/rbP50"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="50%" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btCalcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular novo Salário"
+        android:padding="10dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"/>
+</RelativeLayout>
